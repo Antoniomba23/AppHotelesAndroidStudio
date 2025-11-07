@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".SplashScreen">
+
+    <View
+        android:id="@+id/splashDegradado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/azulTurquesa"
+        android:alpha="0.9"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/splashImagenFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.20"
+        android:src="@drawable/fondo"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splashGLh1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33"
+        />
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="@id/splashGLh1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/splashAppName"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/merriweather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@+id/splashLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
