@@ -8,7 +8,7 @@ Aplicación Android (Java)
 
 ## Tecnologías
 - Android SDK, Gradle.
-- Kotlin.
+- Java.
 
 ## Requisitos
 - Android Studio (versión reciente recomendada).
